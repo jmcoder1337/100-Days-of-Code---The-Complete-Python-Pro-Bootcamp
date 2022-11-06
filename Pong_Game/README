@@ -1,0 +1,23 @@
+PONG README
+
+This is the classic pong game built to run using python code and the turtle game engine (turtle module). Users will need to download both python and the turtle module to play this game. It has very basic functionality and the game plays about as expected. There is no score limit to the game. Every paddle hit of the ball increases the ball's speed until a score when the speed will be reset. There are a few known bugs at this time.
+
+
+Player keys:
+
+Left Paddle player:
+    "W" for up 
+    "S" for down
+Right Paddle player:
+    "Up" Arrow key for up
+    "Down" Arrow key for down
+
+
+
+Known Bugs (No Known Fixes are currently being worked on)
+
+- Sometimes the paddle will hit the ball after the ball moves beyond the bounce_x detection coordinate. If this occurs, the ball will seem to bounce around on the paddle several times until it's distance from the paddle is greater than the required distance to trigger a bounce_x event.  This can result in either the ball staying in play or scoring on that paddle's goal.
+
+- The paddles are not bound by the screen's edges and can therefore continue traveling up or down beyond the screen edges. This can degrade gameplay if a player expects the screen edge to act as a limit for their player paddle.  Additionally, in extreme circumstances, on might lose a paddle.
+
+ 
